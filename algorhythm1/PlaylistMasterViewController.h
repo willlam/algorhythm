@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PlaylistMasterViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *aButton;
 

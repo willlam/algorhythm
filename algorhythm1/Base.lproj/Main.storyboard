@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uCW-UZ-a07">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlists-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,27 +16,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-UI-15Z">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2dc-AG-BrI"/>
+                                    <constraint firstAttribute="height" constant="200" id="UgM-RV-O83"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-WB-9Kr">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKj-gK-Ovh"/>
+                                    <segue destination="wCm-yj-4DX" kind="push" identifier="showPlaylistDetail" id="UrJ-MH-3oI"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="EvO-WB-9Kr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oE4-sU-A7Y"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E6E-lq-DFX"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PaM-au-2La"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4d-yV-m8b"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VuV-Wt-ZP5"/>
+                            <constraint firstItem="EvO-WB-9Kr" firstAttribute="top" secondItem="SGn-UI-15Z" secondAttribute="bottom" constant="8" id="esY-6H-OT6"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fMO-CJ-zRW"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oj6-fX-24t"/>
                             <constraint firstItem="EvO-WB-9Kr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="voo-co-9WZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="lHJ-8v-hHu"/>
                     <connections>
                         <outlet property="aButton" destination="EvO-WB-9Kr" id="ggz-3g-N5m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.33333333333334" y="357.36666666666667"/>
+            <point key="canvasLocation" x="705" y="357"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="qdc-Lg-ijm">
+            <objects>
+                <viewController id="wCm-yj-4DX" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2Y-CA-Gyh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pg3-lG-p4Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pAT-vX-K57">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-ld-xaQ">
+                                <rect key="frame" x="41" y="273" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49179185819999999" green="1" blue="0.33642663369999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5WR-ld-xaQ" firstAttribute="centerX" secondItem="pAT-vX-K57" secondAttribute="centerX" id="3cs-PM-ats"/>
+                            <constraint firstItem="5WR-ld-xaQ" firstAttribute="centerY" secondItem="pAT-vX-K57" secondAttribute="centerY" id="a6Y-J7-IxS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="2Mz-yz-biF"/>
+                    <connections>
+                        <outlet property="buttonPressedLabel" destination="5WR-ld-xaQ" id="yKK-fh-vsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4y-Be-pT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gb1-H9-2El">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uCW-UZ-a07" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rTg-kI-KJY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EyZ-5N-eDf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ0-b5-jeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="357"/>
         </scene>
     </scenes>
 </document>
