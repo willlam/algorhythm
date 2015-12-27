@@ -16,12 +16,18 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+   [self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)buttonPressed:(UIButton *)sender {
+  
+  self.view.backgroundColor = [UIColor orangeColor];
+}
+
 
 @end
