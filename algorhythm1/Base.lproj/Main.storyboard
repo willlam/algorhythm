@@ -18,24 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-UI-15Z">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-UI-15Z">
+                                <rect key="frame" x="2" y="66" width="157" height="165"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="2dc-AG-BrI"/>
-                                    <constraint firstAttribute="height" constant="200" id="UgM-RV-O83"/>
-                                </constraints>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="flc-Rj-679">
+                                <rect key="frame" x="161" y="66" width="157" height="165"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="l0x-Hx-0pG">
+                                <rect key="frame" x="2" y="233" width="157" height="165"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yCt-8W-6Aw">
+                                <rect key="frame" x="2" y="401" width="157" height="165"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="19M-t4-Z4b">
+                                <rect key="frame" x="161" y="401" width="157" height="165"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Rl8-pd-VFD">
+                                <rect key="frame" x="161" y="233" width="157" height="165"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E6E-lq-DFX"/>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PaM-au-2La"/>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4d-yV-m8b"/>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VuV-Wt-ZP5"/>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fMO-CJ-zRW"/>
-                            <constraint firstItem="SGn-UI-15Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oj6-fX-24t"/>
+                            <constraint firstItem="yCt-8W-6Aw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="9cz-Xz-yw2"/>
+                            <constraint firstItem="19M-t4-Z4b" firstAttribute="leading" secondItem="yCt-8W-6Aw" secondAttribute="trailing" constant="2" id="CbE-ub-q0f"/>
+                            <constraint firstAttribute="trailing" secondItem="19M-t4-Z4b" secondAttribute="trailing" constant="2" id="Cc8-6k-LOn"/>
+                            <constraint firstItem="l0x-Hx-0pG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="EyV-R6-VEe"/>
+                            <constraint firstAttribute="trailing" secondItem="Rl8-pd-VFD" secondAttribute="trailing" constant="2" id="GGt-1y-7Gl"/>
+                            <constraint firstItem="flc-Rj-679" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="Jta-3g-DlZ"/>
+                            <constraint firstItem="Rl8-pd-VFD" firstAttribute="top" secondItem="flc-Rj-679" secondAttribute="bottom" constant="2" id="LiG-xM-wpA"/>
+                            <constraint firstItem="flc-Rj-679" firstAttribute="leading" secondItem="SGn-UI-15Z" secondAttribute="trailing" constant="2" id="Obt-oz-LZk"/>
+                            <constraint firstItem="19M-t4-Z4b" firstAttribute="top" secondItem="Rl8-pd-VFD" secondAttribute="bottom" constant="3" id="Qcl-Am-zFp"/>
+                            <constraint firstAttribute="trailing" secondItem="flc-Rj-679" secondAttribute="trailing" constant="2" id="VTj-4u-55h"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="Wis-GU-2Tq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="19M-t4-Z4b" secondAttribute="bottom" constant="2" id="X5c-sQ-BxE"/>
+                            <constraint firstItem="l0x-Hx-0pG" firstAttribute="top" secondItem="SGn-UI-15Z" secondAttribute="bottom" constant="2" id="YDe-9q-vkt"/>
+                            <constraint firstItem="yCt-8W-6Aw" firstAttribute="top" secondItem="l0x-Hx-0pG" secondAttribute="bottom" constant="3" id="crJ-yM-LvL"/>
+                            <constraint firstItem="Rl8-pd-VFD" firstAttribute="leading" secondItem="l0x-Hx-0pG" secondAttribute="trailing" constant="2" id="meJ-Nv-RLe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yCt-8W-6Aw" secondAttribute="bottom" constant="2" id="pD7-NM-udz"/>
+                            <constraint firstItem="SGn-UI-15Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="tng-Vi-QEj"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="0U4-0B-hFG" appends="YES" id="xpz-iH-ep0"/>
@@ -43,7 +70,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="lHJ-8v-hHu"/>
                     <connections>
-                        <outlet property="playlistImageView0" destination="SGn-UI-15Z" id="sx0-eH-XdA"/>
+                        <outletCollection property="playlistImageViews" destination="SGn-UI-15Z" id="S2x-cg-78N"/>
+                        <outletCollection property="playlistImageViews" destination="flc-Rj-679" id="7Fn-eF-D6o"/>
+                        <outletCollection property="playlistImageViews" destination="l0x-Hx-0pG" id="vXF-NW-MAj"/>
+                        <outletCollection property="playlistImageViews" destination="Rl8-pd-VFD" id="xBs-hQ-0Nf"/>
+                        <outletCollection property="playlistImageViews" destination="yCt-8W-6Aw" id="cs8-Fd-5Xe"/>
+                        <outletCollection property="playlistImageViews" destination="19M-t4-Z4b" id="6HZ-fj-U7F"/>
                         <segue destination="wCm-yj-4DX" kind="push" identifier="showPlaylistDetail" id="61q-vd-jG5"/>
                     </connections>
                 </viewController>
